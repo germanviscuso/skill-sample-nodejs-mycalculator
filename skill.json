@@ -1,0 +1,35 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "es-ES": {
+          "summary": "Realiza simples operaciones matemáticas sobre dos números.",
+          "examplePhrases": [
+            "Alexa mi calculadora",
+            "Alexa abre mi calculadora y suma dos más tres",
+            "Alexa abre mi calculadora y multiplica tres por cinco"
+          ],
+          "keywords": [
+            "matemáticas",
+            "números",
+            "calculadora"
+          ],
+          "name": "Mi Calculadora",
+          "description": "Realiza simples operaciones matemáticas sobre dos números."
+      }
+    },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

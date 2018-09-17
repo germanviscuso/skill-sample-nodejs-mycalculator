@@ -1,0 +1,95 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "mi calculadora",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "OperacionIntent",
+                  "slots": [
+                      {
+                          "name": "numerouno",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "numerodos",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "operacion",
+                          "type": "operacion"
+                      }
+                  ],
+                  "samples": [
+                      "{operacion} {numerouno} dividido {numerodos}",
+                      "{operacion} {numerouno} más {numerodos}",
+                      "{operacion} {numerouno} por {numerodos}",
+                      "{operacion} {numerouno} menos {numerodos}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "operacion",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "division",
+                              "synonyms": [
+                                  "divida",
+                                  "divide",
+                                  "dividir"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "multiplicacion",
+                              "synonyms": [
+                                  "multiplique",
+                                  "multiplica",
+                                  "multiplicar"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "substraccion",
+                              "synonyms": [
+                                  "reste",
+                                  "restar",
+                                  "resta"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "adicion",
+                              "synonyms": [
+                                  "sumar",
+                                  "sume",
+                                  "suma"
+                              ]
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
