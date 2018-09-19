@@ -6,8 +6,10 @@
       "merge": {
         "manifest": {
           "apis": {
-            "endpoint": {
-                "uri": "ask-custom-mycalculator-default"
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-mycalculator-skill-default"
+              }
             }
           }
         }
